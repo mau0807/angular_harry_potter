@@ -6,15 +6,15 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class RestService {
-  private listaObj:any = {
-    "Students":"http://hp-api.herokuapp.com/api/characters/students",
-  }
+
+  private students: string = "http://hp-api.herokuapp.com/api/characters/students";
 
   constructor(
     private http: HttpClient
   ) {}
+
   obtenerEstudiantes(): Observable<any>{
-    const url= this.listaObj.students;
+    const url= this.students;
     return this.http.get(url)
   }
 }

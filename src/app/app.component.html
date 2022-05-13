@@ -10,17 +10,17 @@
     </tr>
   </thead>
   <tbody>
-    <!--<tr *ngFor="let estudiantes of listaEstudiantes; let i = index">
+    <tr *ngFor="let estudiantes of listaEstudents; let i = index">
       <td> {{i+1}} </td>
-      <td> {{episodio.name}} </td>
-      <td> {{episodio.created | date: 'medium'}} </td>
-      <td> {{episodio.air_date}} </td>
+      <td> {{estudiantes.name}} </td>
+      <td> {{estudiantes.created | date: 'medium'}} </td>
+      <td> {{estudiantes.air_date}} </td>
       <td> {{ 10 | number:'1.2-2' }} </td>
-      <td> {{episodio.url}} </td>
+      <td> {{estudiantes.url}} </td>
       <td>
 
         <button class="btn btn-danger">Delete</button>
       </td>
-    </tr>!-->
+    </tr>
   </tbody>
 </table>

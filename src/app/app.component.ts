@@ -16,8 +16,7 @@ export class AppComponent {
   listaEstudiantes(){
     this.rest.obtenerEstudiantes().toPromise().then((data) => {
       console.log('toPromise', data);
-      this.listaEstudiantes = data.results
-
+      this.listaEstudents = data;
     })
   }
 }
